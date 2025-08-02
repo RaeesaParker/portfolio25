@@ -34,14 +34,14 @@ export function Navigation() {
               About
             </Link>
             <Link
-              to="/work"
+              to="/experience"
               className={`transition-colors ${
-                isActive("/work")
+                isActive("/experience")
                   ? "text-brand-600 dark:text-brand-400 font-semibold"
                   : "text-slate-600 dark:text-gray-300 hover:text-slate-800 dark:hover:text-white"
               }`}
             >
-              Work
+              Experience
             </Link>
             <Link
               to="/projects"
