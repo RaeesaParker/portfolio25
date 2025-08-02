@@ -1,216 +1,126 @@
-@import "tailwindcss";
+/* Custom animations and effects for the portfolio */
 
-@custom-variant dark (&:where(.dark, .dark *));
-
-@theme {
-  /* Blues */
-  --color-blue-50: #eff6ff;
-  --color-blue-100: #dbeafe;
-  --color-blue-200: #bfdbfe;
-  --color-blue-300: #93c5fd;
-  --color-blue-400: #60a5fa;
-  --color-blue-500: #6495ed; /* your primary */
-  --color-blue-600: #3b82f6;
-  --color-blue-700: #2563eb;
-  --color-blue-800: #1d4ed8;
-  --color-blue-850: #0c1b4d;
-  --color-blue-900: #0d1b2a; /* deep navy */
-
-  /* Blacks */
-  --color-black-50: #f5f5f5;
-  --color-black-100: #e5e5e5;
-  --color-black-200: #d4d4d4;
-  --color-black-300: #b3b3b3;
-  --color-black-400: #7f7f7f;
-  --color-black-500: #4c4c4c;
-  --color-black-600: #333333;
-  --color-black-700: #262626;
-  --color-black-800: #1a1a1a;
-  --color-black-900: #0d0d0d;
-
-  /* Whites */
-  --color-white-50: #ffffff;
-  --color-white-100: #fefefe;
-  --color-white-200: #fdfdfd;
-  --color-white-300: #fcfcfc;
-  --color-white-400: #fafafa;
-  --color-white-500: #f5f5f5;
-  --color-white-600: #f0f0f0;
-  --color-white-700: #ebebeb;
-  --color-white-800: #e5e5e5;
-  --color-white-900: #e0e0e0;
-
-  /* Accent / Gold */
-  --color-gold-50: #fff9e6;
-  --color-gold-100: #fff2cc;
-  --color-gold-200: #ffe599;
-  --color-gold-300: #ffda66;
-  --color-gold-400: #ffcc33;
-  --color-gold-500: #ffbf00; /* your accent */
-  --color-gold-600: #e6a600;
-  --color-gold-700: #cc8c00;
-  --color-gold-800: #b37300;
-  --color-gold-900: #995900;
-
-  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
-  --font-serif: "Spectral", serif;
-  --font-mono: "SFMono-Regular", monospace;
+/* CSS Custom Properties - only what's needed for custom styles */
+:root {
+  /* Brand colors matching tailwind.config.js */
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-accent-500: #14b8a6;
+  --color-accent-600: #0d9488;
+} /* Star field animations - keeping these as they're complex SVG animations */
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23334155' points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E")
+    repeat;
+  animation: moveStars 50s linear infinite;
 }
 
-@layer base {
-  body {
-    background-color: var(--color-blue-50);
-  }
-  .dark body {
-    background-color: var(--color-blue-900);
-  }
-  h1 {
-    font-size: var(--text-6xl);
-    font-family: var(--font-serif);
-    color: var(--color-blue-600);
-  }
-  .dark h1 {
-    color: var(--color-blue-300);
-  }
+.dark .stars {
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23ffffff' points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E")
+    repeat;
+}
 
-  h2 {
-    font-size: var(--text-4xl);
-    font-family: var(--font-serif);
-    color: var(--color-blue-900);
-  }
+.stars2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23334155' points='100 0 120 80 200 100 120 120 100 200 80 120 0 100 80 80'/%3E%3C/g%3E%3C/svg%3E")
+    repeat;
+  animation: moveStars 100s linear infinite;
+}
 
-  .dark h2 {
-    color: var(--color-blue-100);
-  }
+.dark .stars2 {
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23ffffff' points='100 0 120 80 200 100 120 120 100 200 80 120 0 100 80 80'/%3E%3C/g%3E%3C/svg%3E")
+    repeat;
+}
 
-  h3 {
-    font-size: var(--text-3xl);
-    font-family: var(--font-serif);
-    color: var(--color-gold-600);
-  }
+.stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg fill-opacity='0.02'%3E%3Cpolygon fill='%23334155' points='150 0 180 120 300 150 180 180 150 300 120 180 0 150 120 120'/%3E%3C/g%3E%3C/svg%3E")
+    repeat;
+  animation: moveStars 150s linear infinite;
+}
 
-  .dark h3 {
-    color: var(--color-gold-300);
-  }
+.dark .stars3 {
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23ffffff' points='150 0 180 120 300 150 180 180 150 300 120 180 0 150 120 120'/%3E%3C/g%3E%3C/svg%3E")
+    repeat;
+}
 
-  p {
-    color: var(--color-blue-900);
-    font-size: var(--text-xl);
+/* Animation keyframes */
+@keyframes moveStars {
+  from {
+    transform: translateY(0px);
   }
-  .dark p {
-    color: var(--color-blue-100);
-  }
-
-  footer {
-    color: var(--color-blue-900);
-    font-size: var(--text-lg);
-  }
-  .dark footer {
-    color: var(--color-blue-100);
+  to {
+    transform: translateY(-2000px);
   }
 }
 
-button {
-  color: var(--color-blue-900);
-  transition: transform 0.2s;
-}
-
-button:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-}
-
-.dark button {
-  color: var(--color-blue-50);
-}
-
-@layer components {
-  .button-border {
-    border-radius: 5px;
-    border-color: var(--color-blue-900);
-    border-width: 2px;
-    border-style: solid;
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
   }
-
-  .button-border:hover {
-    color: var(--color-black-500);
-    box-shadow: 0 2px 2px 1px var(--color-blue-300);
+  50% {
+    background-position: 100% 50%;
   }
-
-  .dark .button-border {
-    border-radius: 5px;
-    border-color: var(--color-blue-50);
-    border-width: 2px;
-    border-style: solid;
-  }
-
-  .dark .button-border:hover {
-    color: var(--color-blue-50);
-    box-shadow: 0 2px 2px 1px var(--color-blue-300);
-  }
-  .menu-item {
-    font-size: var(--text-4xl);
-    color: var(--color-blue-900);
-  }
-
-  .menu-item:hover {
-    text-shadow: 2px 2px 0 var(--color-blue-50);
-    transform: scale(1.05);
-  }
-
-  .dark .menu-item:hover {
-    text-shadow: 2px 2px 0 var(--color-blue-50);
-    transform: scale(1.05);
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-@layer utilities {
-  @keyframes slideDown {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-  .animate-slideDown {
-    animation: slideDown 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-  .aurora-bg {
-    background: linear-gradient(
-      120deg,
-      var(--color-blue-100),
-      var(--color-blue-300),
-      var(--color-gold-100),
-      var(--color-blue-100)
-    );
-    background-size: 400% 400%;
-    animation: auroraMotion 15s ease infinite;
-    transition: background 0.5s ease;
-  }
+/* Base styles - minimal custom CSS, prefer Tailwind utilities */
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #ecfdf5 50%, #f8fafc 100%);
+  min-height: 100vh;
+}
+.dark body {
+  background: linear-gradient(135deg, #0f172a 0%, #064e3b 50%, #0f172a 100%);
+}
 
-  .dark .aurora-bg {
-    background: linear-gradient(
-      120deg,
-      var(--color-blue-900),
-      var(--color-blue-800),
-      #4f46e5,
-      /* Indigo-like accent */ #7c3aed,
-      /* Subtle violet/purple tone */ var(--color-blue-850),
-      var(--color-blue-900)
-    );
-    background-size: 400% 400%;
-  }
+/* Component styles - only complex custom styles that can't be done with Tailwind */
+.btn-gradient-primary {
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-500),
+    var(--color-accent-500)
+  );
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
 
-  @keyframes auroraMotion {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+.btn-gradient-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -12px rgba(16, 185, 129, 0.25);
+}
+
+/* Text gradients - complex CSS that's hard to do with Tailwind utilities */
+.text-gradient-brand {
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-600),
+    var(--color-accent-600)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
