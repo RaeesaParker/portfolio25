@@ -14,6 +14,7 @@ export function Navigation() {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/20 dark:bg-black/20 backdrop-blur-md border-b border-black/10 dark:border-white/10 transition-colors duration-300">
+
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">

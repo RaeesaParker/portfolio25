@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 export function CTASection() {
   const navigate = useNavigate();
   return (
-    <section className="py-20 px-6 bg-white/20 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
+    <section className="py-20 px-6 bg-gradient-to-br from-brand-500/10 to-accent-500/10 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-gradient-to-br from-brand-500/20 to-accent-500/20 dark:from-brand-400/20 dark:to-accent-400/20 rounded-3xl p-12 border border-brand-200/50 dark:border-brand-700/50 text-center">
+        <div className="bg-gradient-to-br from-brand-500/10 to-accent-500/10 dark:from-brand-400/20 dark:to-accent-400/20 rounded-3xl p-12 border border-brand-200/50 dark:border-brand-700/50 text-center">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-6">
             Want to Know More?
           </h2>

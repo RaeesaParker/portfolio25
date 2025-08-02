@@ -12,13 +12,13 @@ export function ProjectsMainSection({ projects }: { projects: Project[] }) {
   
         <div className="relative z-10">
         <ProjectsHeroSection />
-        <section className="py-12 px-4 bg-white/20 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
+        <section className="py-12 px-4 bg-gradient-to-br from-brand-500/10 to-accent-500/10 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto ">
-        {projects.map((project) => (
-          <ProjectCard key={project.name} project={project} />
-        ))}
-        </div>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto  ">
+          {projects.map((project) => (
+            <ProjectCard key={project.name} project={project} />
+          ))}
+          </div>
         </section>
         <CTASectionProjects />
       </div>

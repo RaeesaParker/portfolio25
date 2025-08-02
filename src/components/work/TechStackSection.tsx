@@ -43,7 +43,7 @@ export function TechStackSection() {
   ];
 
   return (
-    <section className="py-12 px-4 bg-white/20 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
+    <section className="py-12 px-4  bg-gradient-to-br from-brand-500/10 to-accent-500/10 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
       <div className="max-w-5xl w-3/4 mx-auto">
         <div className="text-center mb-8">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-4">

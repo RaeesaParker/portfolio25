@@ -2,7 +2,7 @@ import { Telescope, Code, ArrowRight } from "lucide-react";
 
 export function JourneySection() {
   return (
-    <section className="py-20 px-6 bg-white/20 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
+    <section className="py-20 px-6 bg-gradient-to-br from-brand-500/10 to-accent-500/10 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-6">
@@ -27,7 +27,7 @@ export function JourneySection() {
           </div>
 
           <div className="relative">
-            <div className="bg-gradient-to-br from-brand-500/20 to-accent-500/20 backdrop-blur-sm border border-slate-200/50 dark:border-white/10 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-brand-500/10 to-accent-500/10 backdrop-blur-sm border border-slate-200/50 dark:border-white/10 rounded-2xl p-8">
               <div className="flex items-center justify-center space-x-8">
                 <div className="text-center">
                   <div className="bg-slate-100 dark:bg-slate-700 rounded-full p-6 mb-4 mx-auto w-20 h-20 flex items-center justify-center">

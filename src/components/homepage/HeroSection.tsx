@@ -6,12 +6,10 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6">
-      {/* Animated background stars */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="stars"></div>
-        <div className="stars2"></div>
-        <div className="stars3"></div>
-      </div>
+      {/* Background stars - subtle animation */}
+      <div className="stars opacity-30"></div>
+      <div className="stars2 opacity-20"></div>
+      <div className="stars3 opacity-10"></div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <div className="mb-8">

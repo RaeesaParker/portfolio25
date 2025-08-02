@@ -6,7 +6,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="py-20 px-6 bg-white/20 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300"
+      className="py-20 px-6 bg-gradient-to-br from-brand-500/10 to-accent-500/10 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300"
     >
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -39,7 +39,7 @@ export function AboutSection() {
             </button>
           </div>
           <div className="relative">
-            <div className="bg-gradient-to-br from-brand-500/20 to-accent-500/20 backdrop-blur-sm border border-slate-200/50 dark:border-white/10 rounded-2xl p-8 transition-colors duration-300">
+            <div className="bg-gradient-to-br from-brand-500/10 to-accent-500/10 backdrop-blur-sm border border-slate-200/50 dark:border-white/10 rounded-2xl p-8 transition-colors duration-300">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <Telescope className="w-12 h-12 text-brand-600 dark:text-brand-400 mx-auto mb-3" />
