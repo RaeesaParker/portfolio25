@@ -1,9 +1,9 @@
+import { CTASection } from "../CTASection";
+import { CurrentWorkSection } from "./CurrentWorkSection";
 import { IntroSection } from "./IntroSection";
 import { JourneySection } from "./JourneySection";
-import { CurrentWorkSection } from "./CurrentWorkSection";
-import { WorkPhilosophySection } from "./WorkPhilosophySection";
 import { OutsideCodeSection } from "./OutsideCodeSection";
-import { AboutCTASection } from "./AboutCTASection";
+import { WorkPhilosophySection } from "./WorkPhilosophySection";
 
 export function AboutMainSection() {
   return (
@@ -19,7 +19,7 @@ export function AboutMainSection() {
         <CurrentWorkSection />
         <WorkPhilosophySection />
         <OutsideCodeSection />
-        <AboutCTASection />
+        <CTASection />
       </div>
     </div>
   );

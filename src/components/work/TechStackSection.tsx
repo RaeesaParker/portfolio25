@@ -55,7 +55,7 @@ export function TechStackSection() {
   ];
 
   return (
-    <section className="py-16 px-6">
+    <section className="py-16 px-6 bg-white/20 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-6">

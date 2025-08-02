@@ -1,7 +1,7 @@
-import { ExternalLink, Mail, ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
-export function AboutCTASection() {
+export function CTASection() {
   return (
     <section className="py-20 px-6 bg-white/20 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
       <div className="max-w-4xl mx-auto">
