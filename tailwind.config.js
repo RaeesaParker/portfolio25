@@ -6,7 +6,23 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          "Inter",
+          "Raleway",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
+        ],
+        heading: [
+          "Poppins",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "sans-serif",
+        ],
+        body: [
+          "Raleway",
           "-apple-system",
           "BlinkMacSystemFont",
           "Segoe UI",

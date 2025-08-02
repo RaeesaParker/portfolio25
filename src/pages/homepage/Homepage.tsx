@@ -1,11 +1,9 @@
-import {
-  Navigation,
-  HeroSection,
-  AboutSection,
-  WorkSection,
-  ContactSection,
-  Footer,
-} from "../../components/homepage";
+import { Navigation } from "../../components/homepage/Navigation";
+import { HeroSection } from "../../components/homepage/HeroSection";
+import { AboutSection } from "../../components/homepage/AboutSection";
+import { WorkSection } from "../../components/homepage/WorkSection";
+import { ContactSection } from "../../components/homepage/ContactSection";
+import { Footer } from "../../components/homepage/Footer";
 
 export function Homepage() {
   return (
