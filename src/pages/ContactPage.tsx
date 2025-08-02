@@ -1,5 +1,5 @@
-import { Navigation } from "../components/homepage/Navigation";
-import { Footer } from "../components/homepage/Footer";
+import { Footer } from "../components/common/Footer";
+import { Navigation } from "../components/common/Navigation";
 import { ContactSection } from "../components/contact/ContactSection";
 
 export function ContactPage() {

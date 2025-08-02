@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+
 import { ThemeToggle } from "../ThemeToggle";
 
 export function Navigation() {
@@ -41,6 +42,16 @@ export function Navigation() {
               }`}
             >
               Work
+            </Link>
+            <Link
+              to="/projects"
+              className={`transition-colors ${
+                isActive("/projects")
+                  ? "text-brand-600 dark:text-brand-400 font-semibold"
+                  : "text-slate-600 dark:text-gray-300 hover:text-slate-800 dark:hover:text-white"
+              }`}
+            >
+              Projects
             </Link>
             <Link
               to="/contact"

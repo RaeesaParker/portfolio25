@@ -1,6 +1,6 @@
-import { Navigation } from "../components/homepage/Navigation";
+import { Navigation } from "../components/common/Navigation";
+import { Footer } from "../components/common/Footer";
 import { WorkMainSection } from "../components/work/WorkMainSection";
-import { Footer } from "../components/homepage/Footer";
 
 export function WorkPage() {
   return (

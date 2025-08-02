@@ -1,4 +1,4 @@
-import { CTASection } from "../CTASection";
+import { CTASection } from "../common/CTASection";
 import { ExperienceSection } from "./ExperienceSection";
 import { TechStackSection } from "./TechStackSection";
 import { WorkHeroSection } from "./WorkHeroSection";

@@ -1,6 +1,6 @@
-import { Navigation } from "../components/homepage/Navigation";
 import { AboutMainSection } from "../components/about/AboutMainSection";
-import { Footer } from "../components/homepage/Footer";
+import { Footer } from "../components/common/Footer";
+import { Navigation } from "../components/common/Navigation";
 
 export function AboutPage() {
   return (

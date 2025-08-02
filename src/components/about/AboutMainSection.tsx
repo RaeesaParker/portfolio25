@@ -1,4 +1,4 @@
-import { CTASection } from "../CTASection";
+import { CTASection } from "../common/CTASection";
 import { CurrentWorkSection } from "./CurrentWorkSection";
 import { IntroSection } from "./IntroSection";
 import { JourneySection } from "./JourneySection";
