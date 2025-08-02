@@ -1,7 +1,8 @@
 import { ArrowRight, ExternalLink, Mail } from "lucide-react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function CTASection() {
+  const navigate = useNavigate();
   return (
     <section className="py-20 px-6 bg-white/20 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
       <div className="max-w-4xl mx-auto">
@@ -15,22 +16,28 @@ export function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link
-              to="/work"
+            <button
+              onClick={() => {
+                navigate("/projects");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="group bg-gradient-to-r from-brand-500 to-accent-500 hover:from-brand-600 hover:to-accent-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-3 font-heading"
             >
               <span>View My Projects</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </button>
 
-            <Link
-              to="/contact"
+            <button
+              onClick={() => {
+                navigate("/contact");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="group border-2 border-brand-600 dark:border-brand-400 text-brand-600 dark:text-brand-400 px-8 py-4 rounded-full font-semibold hover:bg-brand-600 dark:hover:bg-brand-400 hover:text-white dark:hover:text-slate-900 transition-all duration-300 flex items-center gap-3 font-heading"
             >
               <Mail className="w-5 h-5" />
               <span>Get In Touch</span>
               <ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-            </Link>
+            </button>
           </div>
 
           <div className="mt-8 pt-8 border-t border-slate-300/50 dark:border-slate-600/50">

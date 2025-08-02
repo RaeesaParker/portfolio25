@@ -1,6 +1,9 @@
 import { ArrowRight, Telescope } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function HeroSection() {
+  const navigate = useNavigate();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6">
       {/* Animated background stars */}
@@ -38,7 +41,11 @@ export function HeroSection() {
             <span>Explore My Universe</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
-          <button className="border border-slate-400/50 dark:border-white/30 text-slate-700 dark:text-white px-8 py-4 rounded-full font-semibold hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300">
+          <button         
+              onClick={() => {
+                navigate("/projects");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }} className="border border-slate-400/50 dark:border-white/30 text-slate-700 dark:text-white px-8 py-4 rounded-full font-semibold hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300">
             View My Work
           </button>
         </div>
