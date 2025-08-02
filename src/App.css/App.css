@@ -1,0 +1,216 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Blues */
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #6495ed; /* your primary */
+  --color-blue-600: #3b82f6;
+  --color-blue-700: #2563eb;
+  --color-blue-800: #1d4ed8;
+  --color-blue-850: #0c1b4d;
+  --color-blue-900: #0d1b2a; /* deep navy */
+
+  /* Blacks */
+  --color-black-50: #f5f5f5;
+  --color-black-100: #e5e5e5;
+  --color-black-200: #d4d4d4;
+  --color-black-300: #b3b3b3;
+  --color-black-400: #7f7f7f;
+  --color-black-500: #4c4c4c;
+  --color-black-600: #333333;
+  --color-black-700: #262626;
+  --color-black-800: #1a1a1a;
+  --color-black-900: #0d0d0d;
+
+  /* Whites */
+  --color-white-50: #ffffff;
+  --color-white-100: #fefefe;
+  --color-white-200: #fdfdfd;
+  --color-white-300: #fcfcfc;
+  --color-white-400: #fafafa;
+  --color-white-500: #f5f5f5;
+  --color-white-600: #f0f0f0;
+  --color-white-700: #ebebeb;
+  --color-white-800: #e5e5e5;
+  --color-white-900: #e0e0e0;
+
+  /* Accent / Gold */
+  --color-gold-50: #fff9e6;
+  --color-gold-100: #fff2cc;
+  --color-gold-200: #ffe599;
+  --color-gold-300: #ffda66;
+  --color-gold-400: #ffcc33;
+  --color-gold-500: #ffbf00; /* your accent */
+  --color-gold-600: #e6a600;
+  --color-gold-700: #cc8c00;
+  --color-gold-800: #b37300;
+  --color-gold-900: #995900;
+
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-serif: "Spectral", serif;
+  --font-mono: "SFMono-Regular", monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-blue-50);
+  }
+  .dark body {
+    background-color: var(--color-blue-900);
+  }
+  h1 {
+    font-size: var(--text-6xl);
+    font-family: var(--font-serif);
+    color: var(--color-blue-600);
+  }
+  .dark h1 {
+    color: var(--color-blue-300);
+  }
+
+  h2 {
+    font-size: var(--text-4xl);
+    font-family: var(--font-serif);
+    color: var(--color-blue-900);
+  }
+
+  .dark h2 {
+    color: var(--color-blue-100);
+  }
+
+  h3 {
+    font-size: var(--text-3xl);
+    font-family: var(--font-serif);
+    color: var(--color-gold-600);
+  }
+
+  .dark h3 {
+    color: var(--color-gold-300);
+  }
+
+  p {
+    color: var(--color-blue-900);
+    font-size: var(--text-xl);
+  }
+  .dark p {
+    color: var(--color-blue-100);
+  }
+
+  footer {
+    color: var(--color-blue-900);
+    font-size: var(--text-lg);
+  }
+  .dark footer {
+    color: var(--color-blue-100);
+  }
+}
+
+button {
+  color: var(--color-blue-900);
+  transition: transform 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.dark button {
+  color: var(--color-blue-50);
+}
+
+@layer components {
+  .button-border {
+    border-radius: 5px;
+    border-color: var(--color-blue-900);
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  .button-border:hover {
+    color: var(--color-black-500);
+    box-shadow: 0 2px 2px 1px var(--color-blue-300);
+  }
+
+  .dark .button-border {
+    border-radius: 5px;
+    border-color: var(--color-blue-50);
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  .dark .button-border:hover {
+    color: var(--color-blue-50);
+    box-shadow: 0 2px 2px 1px var(--color-blue-300);
+  }
+  .menu-item {
+    font-size: var(--text-4xl);
+    color: var(--color-blue-900);
+  }
+
+  .menu-item:hover {
+    text-shadow: 2px 2px 0 var(--color-blue-50);
+    transform: scale(1.05);
+  }
+
+  .dark .menu-item:hover {
+    text-shadow: 2px 2px 0 var(--color-blue-50);
+    transform: scale(1.05);
+  }
+}
+
+@layer utilities {
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  .animate-slideDown {
+    animation: slideDown 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  .aurora-bg {
+    background: linear-gradient(
+      120deg,
+      var(--color-blue-100),
+      var(--color-blue-300),
+      var(--color-gold-100),
+      var(--color-blue-100)
+    );
+    background-size: 400% 400%;
+    animation: auroraMotion 15s ease infinite;
+    transition: background 0.5s ease;
+  }
+
+  .dark .aurora-bg {
+    background: linear-gradient(
+      120deg,
+      var(--color-blue-900),
+      var(--color-blue-800),
+      #4f46e5,
+      /* Indigo-like accent */ #7c3aed,
+      /* Subtle violet/purple tone */ var(--color-blue-850),
+      var(--color-blue-900)
+    );
+    background-size: 400% 400%;
+  }
+
+  @keyframes auroraMotion {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
