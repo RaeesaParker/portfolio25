@@ -1,6 +1,9 @@
 import { ArrowRight, Code } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function WorkSection() {
+  const navigate = useNavigate();
+
   const projects = [
     {
       title: "Interactive Data Visualizations",
@@ -70,8 +73,14 @@ export function WorkSection() {
         </div>
 
         <div className="text-center mt-12">
-          <button className="group border border-slate-400/50 dark:border-white/30 text-slate-700 dark:text-white px-8 py-4 rounded-full font-semibold hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300 flex items-center space-x-2 mx-auto">
-            <span>View Full Portfolio</span>
+          <button
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              navigate("/experience");
+            }}
+            className="group border border-slate-400/50 dark:border-white/30 text-slate-700 dark:text-white px-8 py-4 rounded-full font-semibold hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300 flex items-center space-x-2 mx-auto"
+          >
+            <span>View My Experience</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>

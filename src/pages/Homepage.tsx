@@ -10,7 +10,6 @@ export function Homepage() {
         <HomepageMainSection />
       </div>
       <Footer />
-
     </div>
   );
 }

@@ -18,8 +18,8 @@ export function CTASection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={() => {
-                navigate("/projects");
                 window.scrollTo({ top: 0, behavior: "smooth" });
+                navigate("/projects");
               }}
               className="group bg-gradient-to-r from-brand-500 to-accent-500 hover:from-brand-600 hover:to-accent-600 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-3 font-heading"
             >
@@ -29,8 +29,8 @@ export function CTASection() {
 
             <button
               onClick={() => {
-                navigate("/contact");
                 window.scrollTo({ top: 0, behavior: "smooth" });
+                navigate("/contact");
               }}
               className="group border-2 border-brand-600 dark:border-brand-400 text-brand-600 dark:text-brand-400 px-8 py-4 rounded-full font-semibold hover:bg-brand-600 dark:hover:bg-brand-400 hover:text-white dark:hover:text-slate-900 transition-all duration-300 flex items-center gap-3 font-heading"
             >

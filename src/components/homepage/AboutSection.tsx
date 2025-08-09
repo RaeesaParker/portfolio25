@@ -29,8 +29,8 @@ export function AboutSection() {
             </p>
             <button
               onClick={() => {
-                navigate("/about");
                 window.scrollTo({ top: 0, behavior: "smooth" });
+                navigate("/about");
               }}
               className="group border border-brand-600 dark:border-brand-400 text-brand-600 dark:text-brand-400 px-6 py-3 rounded-full font-semibold hover:bg-brand-600 dark:hover:bg-brand-400 hover:text-white dark:hover:text-slate-900 transition-all duration-300 flex items-center space-x-2"
             >

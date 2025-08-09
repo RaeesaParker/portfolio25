@@ -35,15 +35,23 @@ export function HeroSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="group bg-gradient-to-r from-brand-500 to-accent-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-brand-500/25 transition-all duration-300 flex items-center space-x-2">
+          <button
+            onClick={() => {
+              const section = document.getElementById("about");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="group bg-gradient-to-r from-brand-500 to-accent-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-brand-500/25 transition-all duration-300 flex items-center space-x-2"
+          >
             <span>Explore My Universe</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
-          <button         
-              onClick={() => {
-                navigate("/projects");
-                window.scrollTo({ top: 0, behavior: "smooth" });
-              }} className="border border-slate-400/50 dark:border-white/30 text-slate-700 dark:text-white px-8 py-4 rounded-full font-semibold hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300">
+          <button
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              navigate("/projects");
+            }}
+            className="border border-slate-400/50 dark:border-white/30 text-slate-700 dark:text-white px-8 py-4 rounded-full font-semibold hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300"
+          >
             View My Work
           </button>
         </div>
