@@ -1,4 +1,5 @@
-import { ArrowRight, Code, Star, Telescope } from "lucide-react";
+import { ArrowRight, Code, Telescope } from "lucide-react";
+import { FaFlask, FaRainbow } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 export function AboutSection() {
@@ -60,7 +61,7 @@ export function AboutSection() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <Star className="w-12 h-12 text-accent-600 dark:text-accent-400 mx-auto mb-3" />
+                  <FaRainbow className="w-8 h-8 text-accent-600 dark:text-accent-400 mx-auto mb-3" />
                   <h3 className="text-slate-800 dark:text-white font-semibold mb-2 transition-colors duration-300">
                     Innovation
                   </h3>
@@ -69,11 +70,7 @@ export function AboutSection() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-gradient-to-br from-brand-600 to-accent-600 dark:from-brand-400 dark:to-accent-400 rounded-full mx-auto mb-3 flex items-center justify-center">
-                    <span className="text-white dark:text-slate-900 font-bold text-lg">
-                      R
-                    </span>
-                  </div>
+                  <FaFlask className="w-8 h-8 text-brand-600 dark:text-brand-400 mx-auto mb-3" />
                   <h3 className="text-slate-800 dark:text-white font-semibold mb-2 transition-colors duration-300">
                     Research
                   </h3>

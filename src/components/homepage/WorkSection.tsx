@@ -6,27 +6,27 @@ export function WorkSection() {
 
   const projects = [
     {
-      title: "Interactive Data Visualizations",
+      title: "Full-Stack Applications",
       description:
-        "Complex astronomical data transformed into intuitive visual experiences",
-      tech: ["React", "D3.js", "Python"],
-      color: "from-accent-500 to-accent-600",
+        "Building intuitive, accessible interfaces with React and Expo, backed by scalable APIs and real-time data with GraphQL and AWS services.",
+      tech: ["React", "Expo", "GraphQL", "AWS", "TypeScript"],
+      color: "from-brand-500 to-brand-600",
     },
     {
-      title: "Scalable Backend Systems",
+      title: "Cloud Infrastructure & Back-End",
       description:
-        "High-performance APIs and microservices for research applications",
-      tech: ["Node.js", "PostgreSQL", "Docker"],
+        "Developing robust backend systems with .NET and Node.js, and managing cloud infrastructure using AWS and Terraform for scalable deployments.",
+      tech: ["Dotnet", "Node.js", "Terraform", "AWS"],
       color: "from-brand-500 to-brand-600",
     },
     {
       title: "AR/VR Experiences",
-      description: "Immersive educational content for astronomy and physics",
-      tech: ["Unity", "WebXR", "Three.js"],
+      description:
+        "Creating immersive, interactive educational tools in astronomy and physics using Unity and WebXR.",
+      tech: ["Unity", "WebXR", "8th Wall"],
       color: "from-brand-600 to-accent-500",
     },
   ];
-
   return (
     <section id="work" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">

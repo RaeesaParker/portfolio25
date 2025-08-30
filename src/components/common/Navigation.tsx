@@ -55,6 +55,7 @@ export function Navigation(): JSX.Element {
           {/* Brand - hide on small screens when panel is open to avoid duplicate header */}
           <Link
             to="/"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className={`items-center space-x-2 ${
               open ? "hidden md:flex" : "flex"
             }`}
@@ -85,6 +86,7 @@ export function Navigation(): JSX.Element {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/about"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className={`transition-colors ${
                 isActive("/about")
                   ? "text-brand-600 dark:text-brand-400 font-semibold"
@@ -95,6 +97,7 @@ export function Navigation(): JSX.Element {
             </Link>
             <Link
               to="/experience"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className={`transition-colors ${
                 isActive("/experience")
                   ? "text-brand-600 dark:text-brand-400 font-semibold"
@@ -105,6 +108,7 @@ export function Navigation(): JSX.Element {
             </Link>
             <Link
               to="/projects"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className={`transition-colors ${
                 isActive("/projects")
                   ? "text-brand-600 dark:text-brand-400 font-semibold"
@@ -115,6 +119,7 @@ export function Navigation(): JSX.Element {
             </Link>
             <Link
               to="/contact"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className={`transition-colors ${
                 isActive("/contact")
                   ? "text-brand-600 dark:text-brand-400 font-semibold"
@@ -160,7 +165,10 @@ export function Navigation(): JSX.Element {
               <nav className="flex flex-col space-y-4">
                 <Link
                   to="/about"
-                  onClick={() => setOpen(false)}
+                  onClick={() => {
+                    setOpen(false);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                   className={`text-lg py-3 px-3 rounded-md transition-colors ${
                     isActive("/about")
                       ? "text-brand-600 dark:text-brand-400 font-semibold bg-brand-50 dark:bg-white/5"
@@ -171,7 +179,10 @@ export function Navigation(): JSX.Element {
                 </Link>
                 <Link
                   to="/experience"
-                  onClick={() => setOpen(false)}
+                  onClick={() => {
+                    setOpen(false);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                   className={`text-lg py-3 px-3 rounded-md transition-colors ${
                     isActive("/experience")
                       ? "text-brand-600 dark:text-brand-400 font-semibold bg-brand-50 dark:bg-white/5"
@@ -182,7 +193,10 @@ export function Navigation(): JSX.Element {
                 </Link>
                 <Link
                   to="/projects"
-                  onClick={() => setOpen(false)}
+                  onClick={() => {
+                    setOpen(false);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                   className={`text-lg py-3 px-3 rounded-md transition-colors ${
                     isActive("/projects")
                       ? "text-brand-600 dark:text-brand-400 font-semibold bg-brand-50 dark:bg-white/5"
@@ -193,7 +207,10 @@ export function Navigation(): JSX.Element {
                 </Link>
                 <Link
                   to="/contact"
-                  onClick={() => setOpen(false)}
+                  onClick={() => {
+                    setOpen(false);
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                   className={`text-lg py-3 px-3 rounded-md transition-colors ${
                     isActive("/contact")
                       ? "text-brand-600 dark:text-brand-400 font-semibold bg-brand-50 dark:bg-white/5"
