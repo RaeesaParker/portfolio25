@@ -5,25 +5,29 @@ export function CurrentWorkSection() {
     {
       icon: Laptop,
       title: "Digital Products",
-      description: "From internal tools to user-facing apps",
+      description:
+        "Building internal tools and user-facing applications with care and purpose.",
       color: "text-brand-600 dark:text-brand-400",
     },
     {
       icon: Users,
       title: "Collaboration",
-      description: "Working with designers, researchers, and stakeholders",
+      description:
+        "Working closely with researchers, and stakeholders to shape solutions.",
       color: "text-accent-600 dark:text-accent-400",
     },
     {
       icon: Lightbulb,
       title: "Problem Solving",
-      description: "Bringing ideas to life and solving real challenges",
+      description:
+        "Turning complex challenges into intuitive, meaningful user experiences.",
       color: "text-brand-600 dark:text-brand-400",
     },
     {
       icon: Rocket,
       title: "End-to-End",
-      description: "Taking projects from concept to delivery",
+      description:
+        "Driving projects from idea to launch, with a focus on quality and usability.",
       color: "text-accent-600 dark:text-accent-400",
     },
   ];
@@ -37,11 +41,10 @@ export function CurrentWorkSection() {
           </h2>
           <div className="max-w-4xl mx-auto">
             <p className="font-body text-lg text-slate-600 dark:text-gray-300 leading-relaxed mb-8">
-              At Lancaster University, I work on a variety of digital
-              products—from internal tools to user-facing apps. I get to
-              collaborate closely with designers, researchers, and stakeholders
-              to bring ideas to life, solve real problems, and push projects
-              from concept to delivery.
+              I'm currently a Full Stack Developer on the Innovation Team at
+              Lancaster University. I work across web and mobile to design and
+              build tools that solve real problems and deliver thoughtful,
+              user-focused solutions from the ground up.
             </p>
           </div>
         </div>

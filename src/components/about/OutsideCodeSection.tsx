@@ -1,28 +1,30 @@
-import { Telescope, BookOpen, Coffee, Mountain } from "lucide-react";
+import { Mountain, Crosshair, Shield, BookOpen } from "lucide-react";
 
 export function OutsideCodeSection() {
   const interests = [
     {
-      icon: Telescope,
-      title: "Stargazing",
+      icon: Mountain,
+      title: "Hiking",
       description:
-        "Still love looking up—whether it's through a telescope or on a night hike",
+        "I love getting outdoors and finding new trails—exploring nature helps me reset and recharge.",
+    },
+    {
+      icon: Crosshair,
+      title: "Archery",
+      description:
+        "Precision, patience, and focus—archery keeps me grounded and sharp.",
+    },
+    {
+      icon: Shield,
+      title: "Rugby",
+      description:
+        "I’m a lifelong fan of the sport—nothing beats the strategy, intensity, and community around a great match.",
     },
     {
       icon: BookOpen,
-      title: "Sci-Fi Novels",
+      title: "Fantasy Reading",
       description:
-        "Exploring distant worlds and future possibilities through great storytelling",
-    },
-    {
-      icon: Coffee,
-      title: "Design & Tools",
-      description: "Learning new design tools and the occasional flat white",
-    },
-    {
-      icon: Mountain,
-      title: "Night Hikes",
-      description: "Finding peace and perspective under the stars",
+        "I’m a big fan of immersive worlds, rich characters, and epic storytelling.",
     },
   ];
 
@@ -34,9 +36,9 @@ export function OutsideCodeSection() {
             Outside of Code
           </h2>
           <p className="font-body text-lg text-slate-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
-            Outside of dev work, I still love looking up—whether it's a
-            telescope, a sci-fi novel, or a night hike. I'm also into design,
-            learning new tools, and the occasional flat white.
+            When I’m not coding, you’ll usually find me outdoors or with a
+            book—hiking, practicing archery, cheering on my favorite rugby
+            teams, or getting lost in fantasy worlds.
           </p>
         </div>
 

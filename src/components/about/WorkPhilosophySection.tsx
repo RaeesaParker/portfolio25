@@ -4,30 +4,30 @@ export function WorkPhilosophySection() {
   const values = [
     {
       icon: Target,
-      title: "Methodical & Data-Informed",
+      title: "Analytical & Intentional",
       description:
-        "I bring a systematic approach to every project, making decisions based on evidence and clear objectives.",
+        "I take a methodical, data-informed approach—turning insights into thoughtful decisions that guide product direction.",
       color: "from-brand-500 to-brand-600",
     },
     {
       icon: Heart,
-      title: "User-Centered Design",
+      title: "User-Centered Thinking",
       description:
-        "I care just as much about the user experience as the technical implementation—creating inclusive, effortless interactions.",
+        "Every decision starts with empathy. I design and build with the goal of creating inclusive, effortless user experiences.",
       color: "from-accent-500 to-accent-600",
     },
     {
       icon: Code2,
-      title: "Clean & Maintainable",
+      title: "Clean, Scalable Code",
       description:
-        "I believe in writing code that's not just functional, but readable, scalable, and sustainable for the long term.",
+        "I prioritise clarity, separation of concerns, and maintainability—ensuring codebases are scalable and team-friendly.",
       color: "from-brand-500 to-accent-500",
     },
     {
       icon: Users,
-      title: "Simplifying Complexity",
+      title: "Clarity Through Simplicity",
       description:
-        "I enjoy taking complex problems and breaking them down into elegant, understandable solutions.",
+        "I enjoy untangling complex problems and distilling them into clear, intuitive solutions that make sense to everyone.",
       color: "from-accent-500 to-brand-500",
     },
   ];
@@ -40,9 +40,8 @@ export function WorkPhilosophySection() {
             How I Work
           </h2>
           <p className="font-body text-lg text-slate-600 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
-            I bring a methodical, data-informed mindset to every project, but I
-            care just as much about the user experience as I do about the
-            technical details.
+            I combine scientific thinking with creative problem-solving to build
+            digital experiences that are thoughtful, scalable, and user-first.
           </p>
         </div>
 

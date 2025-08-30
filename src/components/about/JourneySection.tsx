@@ -13,16 +13,19 @@ export function JourneySection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="font-body text-lg text-slate-600 dark:text-gray-300 leading-relaxed">
-              My journey started in the world of stars and galaxies, where I
-              learned to think analytically, work with complex systems, and turn
-              raw data into insight. While I loved the challenge of research, I
-              was drawn to the creativity and immediacy of building real tools
-              with code.
+              My career began in astrophysics, where I explored the complexities
+              of the universe—working with vast datasets, running simulations,
+              and uncovering insights through scientific rigor. It taught me how
+              to think analytically, solve problems systematically, and stay
+              endlessly curious.
             </p>
             <p className="font-body text-lg text-slate-600 dark:text-gray-300 leading-relaxed">
-              What began as a curiosity became a passion—and eventually, a
-              career. I transitioned into full stack development to combine
-              scientific problem-solving with modern design and technology.
+              Over time, that same curiosity pulled me toward software
+              development. I discovered a passion for building real-world tools
+              that solve meaningful problems, blending my analytical mindset
+              with creativity, collaboration, and code. Today, I apply that
+              experience to crafting thoughtful, impactful digital solutions
+              across web and mobile.
             </p>
           </div>
 
@@ -37,7 +40,7 @@ export function JourneySection() {
                     Astrophysics
                   </h3>
                   <p className="font-body text-sm text-slate-500 dark:text-gray-400">
-                    Data analysis, research, complex systems
+                    Scientific thinking, data analysis, complex systems
                   </p>
                 </div>
 
@@ -51,7 +54,7 @@ export function JourneySection() {
                     Development
                   </h3>
                   <p className="font-body text-sm text-slate-500 dark:text-gray-400">
-                    Problem-solving, creativity, real impact
+                    Creative problem-solving, collaboration, real-world impact
                   </p>
                 </div>
               </div>
