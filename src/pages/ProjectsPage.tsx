@@ -2,51 +2,22 @@ import { Footer } from "../components/common/Footer";
 import { Navigation } from "../components/common/Navigation";
 import { Project } from "../components/projects/ProjectCard";
 import { ProjectsMainSection } from "../components/projects/ProjectsMainSection";
+import pathfinder from "../assets/projects/pathfinder.png";
 
 const projects: Project[] = [
   {
-    name: "NeighbourWho?",
+    name: "PathFinder",
     description:
-      "A social media app that groups users with their neighbours for hyper-local posts and comments.",
+      "An AI-powered career exploration tool that analyses student academic experience, interests, and goals to generate personalised insights and career suggestions.",
     features: [
-      "Automatic neighbourhood grouping",
-      "Real-time post updates",
-      "Privacy-first design",
+      "Uses Google Gemini 2.0 Flash API for contextual analysis",
+      "Performs intelligent skills mapping across technical, transferable, and interest-based competencies",
+      "Delivers nuanced, encouraging recommendations through prompt engineering",
     ],
-    tags: ["React", "Full Stack", "Node.js", "MySQL", "Express"],
-    image: "/api/placeholder/400/250",
-    liveDemo: "https://neighbourwho.netlify.app/",
-    github: "https://github.com/RaeesaParker/neighbourhood-front",
-    caseStudy: null,
-  },
-  {
-    name: "PinIt!",
-    description:
-      "A kanban-style work management tool for ideation, planning, and tracking progress visually.",
-    features: [
-      "Drag-and-drop task boards",
-      "Progress tracking",
-      "Rewarding UI/UX",
-    ],
-    tags: ["React", "Kanban", "Node.js", "Express", "MySQL"],
-    image: "/api/placeholder/400/250",
-    liveDemo: "https://pinitboard.netlify.app/",
-    github: "https://github.com/RaeesaParker/toDoList",
-    caseStudy: null,
-  },
-  {
-    name: "Dice Game!",
-    description:
-      "A fun two-player dice game. Be the first to reach a score of fifty!",
-    features: [
-      "Simple, addictive gameplay",
-      "Responsive design",
-      "Instant play—no login required",
-    ],
-    tags: ["JavaScript", "Game", "Frontend"],
-    image: "/api/placeholder/400/250",
-    liveDemo: "https://raeesaparker.github.io/dice-game/",
-    github: "https://github.com/RaeesaParker/dice-game",
+    tags: ["React", "TypeScript", "AI", "Gemini API", "Front-End"],
+    image: pathfinder,
+    liveDemo: "https://lighthearted-snickerdoodle-b713b5.netlify.app/",
+    github: "https://github.com/RaeesaParker/pathFinder",
     caseStudy: null,
   },
 ];

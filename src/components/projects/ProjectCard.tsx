@@ -1,4 +1,4 @@
-import React from "react";
+// React imports intentionally omitted; using JSX runtime
 
 export type Project = {
   name: string;
@@ -15,7 +15,7 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl shadow-xl border border-slate-200/50 dark:border-slate-700/50 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-2xl duration-300">
       {project.image && (
-        <div className="w-full h-48 bg-slate-200 dark:bg-slate-700 flex items-center justify-center overflow-hidden">
+        <div className="w-full h-48 md:h-56 bg-slate-200 dark:bg-slate-700 overflow-hidden">
           <img
             src={project.image}
             alt={project.name}
