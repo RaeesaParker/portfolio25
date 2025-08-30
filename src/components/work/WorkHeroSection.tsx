@@ -9,14 +9,13 @@ export function WorkHeroSection() {
             My Experience
           </h1>
           <p className="font-heading text-xl md:text-2xl text-brand-600 dark:text-brand-400 font-semibold mb-8">
-            From astrophysics research to full-stack development—exploring
-            innovation across platforms.
+            From astrophysics to full-stack development—applying analytical
+            thinking to build scalable, human-centered solutions.
           </p>
           <div className="h-px bg-gradient-to-r from-transparent via-slate-300 dark:via-slate-600 to-transparent mb-8"></div>
           <p className="font-body text-lg text-slate-600 dark:text-gray-300 leading-relaxed max-w-4xl mx-auto">
-            Discover the technologies I work with, the experiences that
-            shaped my journey, and the projects that showcase my passion for
-            building thoughtful digital solutions.
+            A snapshot of my professional journey—where I’ve worked, what I’ve
+            built, and the tools I use to bring ideas to life.
           </p>
         </div>
       </div>

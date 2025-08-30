@@ -1,49 +1,62 @@
-import { Cloud, Code, Database, FileCode, GitBranch, Globe, Layers, Palette, Settings, Terminal } from "lucide-react";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiSharp,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiNodedotjs,
+  SiNextdotjs,
+  SiDotnet,
+  SiTailwindcss,
+  SiUnity,
+  SiAmazon,
+  SiMysql,
+  SiTerraform,
+  SiGit,
+} from "react-icons/si";
+import { FaCode } from "react-icons/fa";
 
 export function TechStackSection() {
   const techStacks = [
     {
       category: "Languages",
       technologies: [
-        { name: "JavaScript", icon: FileCode },
-        { name: "TypeScript", icon: FileCode },
-        { name: "Python", icon: Terminal },
-        { name: "HTML5", icon: Globe },
-        { name: "CSS3", icon: Palette },
-        { name: "C#", icon: FileCode },
+        { name: "JavaScript", icon: SiJavascript },
+        { name: "TypeScript", icon: SiTypescript },
+        { name: "Python", icon: SiPython },
+        { name: "C#", icon: SiSharp },
+        { name: "HTML5", icon: SiHtml5 },
+        { name: "CSS3", icon: SiCss3 },
       ],
     },
     {
       category: "Frameworks & Libraries",
       technologies: [
-        { name: "React", icon: Code },
-        { name: "Node.js", icon: Terminal },
-        { name: "Express", icon: Settings },
-        { name: "Next.js", icon: Code },
-        { name: "Bootstrap", icon: Palette },
-        { name: "Tailwind CSS", icon: Palette },
-        { name: "Unity", icon: Layers },
-        { name: ".NET", icon: Code },
+        { name: "React", icon: SiReact },
+        { name: "Node.js", icon: SiNodedotjs },
+        { name: "Next.js", icon: SiNextdotjs },
+        { name: ".NET", icon: SiDotnet },
+        { name: "Tailwind CSS", icon: SiTailwindcss },
+        { name: "Unity", icon: SiUnity },
       ],
     },
     {
       category: "Tools & Platforms",
       technologies: [
-        { name: "Git", icon: GitBranch },
-        { name: "AWS", icon: Cloud },
-        { name: "MySQL", icon: Database },
-        { name: "PostgreSQL", icon: Database },
-        { name: "Figma", icon: Palette },
-        { name: "WordPress", icon: Globe },
-        { name: "Terraform", icon: Settings },
-        { name: "Azure", icon: Cloud },
-        { name: "Azure DevOps", icon: Settings },
+        { name: "AWS", icon: SiAmazon },
+        { name: "MySQL", icon: SiMysql },
+        { name: "Terraform", icon: SiTerraform },
+        { name: "Azure", icon: FaCode },
+        { name: "Git", icon: SiGit },
+        { name: "Azure DevOps", icon: FaCode },
       ],
     },
   ];
 
   return (
-    <section className="py-12 px-4  bg-gradient-to-br from-brand-500/10 to-accent-500/10 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
+    <section className="py-12 px-4 bg-gradient-to-br from-brand-500/10 to-accent-500/10 dark:bg-black/20 backdrop-blur-sm transition-colors duration-300">
       <div className="max-w-5xl w-3/4 mx-auto">
         <div className="text-center mb-8">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-slate-800 dark:text-white mb-4">
@@ -53,15 +66,20 @@ export function TechStackSection() {
             A quick look at the tools and technologies I use most often.
           </p>
         </div>
+
         <div className="divide-y divide-slate-300/50 dark:divide-slate-700/50">
           {techStacks.map((stack) => (
-            <div key={stack.category} className="flex flex-col sm:flex-row items-start sm:items-center py-6 gap-4">
+            <div
+              key={stack.category}
+              className="flex flex-col sm:flex-row items-start sm:items-center py-6 gap-4"
+            >
               <div className="w-40 min-w-[8rem] font-heading text-lg text-slate-800 dark:text-white mb-2 sm:mb-0">
                 {stack.category}
               </div>
               <div className="flex flex-wrap gap-4 flex-1">
                 {stack.technologies.map((tech) => {
-                  const TechIcon = tech.icon;
+                  // Use provided icon or fall back to a neutral code icon
+                  const TechIcon = tech.icon ? tech.icon : FaCode;
                   return (
                     <div
                       key={tech.name}
