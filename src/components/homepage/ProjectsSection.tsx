@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import pathfinder from "../../assets/projects/pathfinder.png";
 
 const ProjectsSection: React.FC = () => {
   const navigate = useNavigate();
@@ -36,18 +37,18 @@ const ProjectsSection: React.FC = () => {
           <div className="relative">
             <div className="bg-gradient-to-br from-brand-500/10 to-accent-500/10 backdrop-blur-sm border border-slate-200/50 dark:border-white/10 rounded-2xl p-8 transition-colors duration-300">
               <img
-                src="https://via.placeholder.com/800x450.png?text=Project+Screenshot"
-                alt="Project screenshot placeholder"
+                src={pathfinder}
+                alt="PathFinder project screenshot"
                 className="w-full h-48 md:h-56 object-cover rounded-lg mb-4"
               />
 
               <h3 className="text-slate-800 dark:text-white font-semibold text-2xl mb-2 transition-colors duration-300">
-                Featured — Interactive Data Visualizations
+                PathFinder — AI career exploration
               </h3>
               <p className="text-slate-600 dark:text-gray-400 mb-4 leading-relaxed transition-colors duration-300">
-                Complex astronomical data transformed into intuitive visual
-                experiences — interactive dashboards, animated plots, and
-                exploratory tools.
+                An AI-powered career exploration tool that analyses student
+                academic experience, interests, and goals to generate
+                personalised insights and career suggestions.
               </p>
 
               <div className="flex flex-wrap gap-2 mb-3">
@@ -55,10 +56,16 @@ const ProjectsSection: React.FC = () => {
                   React
                 </span>
                 <span className="bg-slate-200/70 dark:bg-white/10 text-slate-700 dark:text-gray-300 px-3 py-1 rounded-full text-sm">
-                  D3.js
+                  TypeScript
                 </span>
                 <span className="bg-slate-200/70 dark:bg-white/10 text-slate-700 dark:text-gray-300 px-3 py-1 rounded-full text-sm">
-                  Python
+                  AI
+                </span>
+                <span className="bg-slate-200/70 dark:bg-white/10 text-slate-700 dark:text-gray-300 px-3 py-1 rounded-full text-sm">
+                  Gemini API
+                </span>
+                <span className="bg-slate-200/70 dark:bg-white/10 text-slate-700 dark:text-gray-300 px-3 py-1 rounded-full text-sm">
+                  Node.js
                 </span>
               </div>
             </div>
