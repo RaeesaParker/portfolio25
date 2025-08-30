@@ -1,4 +1,4 @@
-import { Code, ExternalLink, Star, Telescope } from "lucide-react";
+import { ArrowRight, Code, Star, Telescope } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export function AboutSection() {
@@ -35,7 +35,7 @@ export function AboutSection() {
               className="group border border-brand-600 dark:border-brand-400 text-brand-600 dark:text-brand-400 px-6 py-3 rounded-full font-semibold hover:bg-brand-600 dark:hover:bg-brand-400 hover:text-white dark:hover:text-slate-900 transition-all duration-300 flex items-center space-x-2"
             >
               <span>Learn More</span>
-              <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
           <div className="relative">
